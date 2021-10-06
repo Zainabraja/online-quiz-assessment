@@ -92,7 +92,7 @@
                 <?php 
                     if(@$_GET['q']==1) 
                     {
-                        $result = mysqli_query($con,"SELECT * FROM user email!=\"zainabraja53@gmail.com\" AND email!=\"zainabrajaaa@gmail.com\" AND email!=\"zainabrajaaaa@gmail.com\" ") or die('Error');
+                        $result = mysqli_query($con,"SELECT * FROM user WHERE email!=\"zainabraja53@gmail.com\" AND email!=\"zainabrajaaa@gmail.com\" AND email!=\"zainabrajaaaa@gmail.com\" ") or die('Error');
                         echo  '<div class="panel"><div class="table-responsive"><table class="table table-striped title1">
                         <tr><td><center><b>S.N.</b></center></td><td><center><b>Name</b></center></td><td><center><b>College</b></center></td><td><center><b>Email</b></center></td><td><center><b>Action</b></center></td></tr>';
                         $c=1;
