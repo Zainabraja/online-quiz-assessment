@@ -68,7 +68,7 @@
 
                 if(@$_GET['q']== 2) 
                 {
-                    $q=mysqli_query($con,"SELECT * FROM rank  ORDER BY score DESC " )or die('Error223');
+                    $q=mysqli_query($con,"SELECT * FROM rank WHERE email!=\"pinky@gmail.com\" AND email!=\"priyanka@gmail.com\" ORDER BY score DESC " )or die('Error223');
                     echo  '<div class="panel title"><div class="table-responsive">
                     <table class="table table-striped title1" >
                     <tr style="color:red"><td><center><b>Rank</b></center></td><td><center><b>Name</b></center></td><td><center><b>Score</b></center></td></tr>';
@@ -92,7 +92,7 @@
                 <?php 
                     if(@$_GET['q']==1) 
                     {
-                        $result = mysqli_query($con,"SELECT * FROM user") or die('Error');
+                        $result = mysqli_query($con,"SELECT * FROM user email!=\"zainabraja53@gmail.com\" AND email!=\"zainabrajaaa@gmail.com\" AND email!=\"zainabrajaaaa@gmail.com\" ") or die('Error');
                         echo  '<div class="panel"><div class="table-responsive"><table class="table table-striped title1">
                         <tr><td><center><b>S.N.</b></center></td><td><center><b>Name</b></center></td><td><center><b>College</b></center></td><td><center><b>Email</b></center></td><td><center><b>Action</b></center></td></tr>';
                         $c=1;
