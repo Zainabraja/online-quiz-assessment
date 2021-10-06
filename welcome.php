@@ -169,7 +169,7 @@
 
                     if(@$_GET['q']== 3) 
                     {
-                        $q=mysqli_query($con,"SELECT * FROM rank ORDER BY score DESC WHERE email!=\"pinky@gmail.com\" AND email!=\"priyanka@gmail.com\"" )or die('Error223');
+                        $q=mysqli_query($con,"SELECT * FROM rank WHERE email!=\"pinky@gmail.com\" AND email!=\"priyanka@gmail.com\" ORDER BY score DESC" )or die('Error223');
                         echo  '<div class="panel title"><div class="table-responsive">
                         <table class="table table-striped title1" >
                         <tr style="color:red"><td><center><b>Rank</b></center></td><td><center><b>Name</b></center></td><td><center><b>Email</b></center></td><td><center><b>Score</b></center></td></tr>';
