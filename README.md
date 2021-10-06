@@ -44,3 +44,26 @@ For Deployment, we have used `Amazon AWS Cloud` as a platform.
 
 The application is hosted on an `Elastic Beanstalk` environment.
 
+## Project Setup
+
+Clone webapp from https://github.com/Zainabraja/online-quiz-assessment
+
+Hosted on httpd server at Amazon Linux AMI
+
+## CI/CD setup
+1. Create a GitHub repository. You may initialize it with a README, license, .gitignore
+2. Install git via terminal 
+
+   (On Ubuntu you can do `sudo apt-get install git`)
+3. Then do a git clone of your repository, or simply download the zip file of your repository from GitHub and extract it.
+4. Copy your php project in the new folder created after cloning (its name will be same to that of the repository you cloned).
+5. Add all the changes you want.
+6. Then execute these commands:
+   
+   ````
+   git add . 
+
+   git commit -m "[mandatory commit message]" 
+   
+   git push [url to your repository] master/main 
+7. Now your commit will be successfully pushed to the main branch of your GitHub repository.
